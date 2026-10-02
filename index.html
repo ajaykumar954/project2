@@ -3,40 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Management</title>
+    <title>Money Tracker</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>Student Management System</h1>
-        <p>Git Branch Practice Project</p>
+        <h1>Money Tracker</h1>
+        <p>Track your income and expenses</p>
     </header>
 
     <main>
+
         <section class="card">
-            <h2>Student Information</h2>
+            <h2>Add Transaction</h2>
 
-            <form id="studentForm">
-                <input type="text" id="name" placeholder="Enter student name">
-                <input type="text" id="rollNo" placeholder="Enter roll number">
-                <input type="text" id="course" placeholder="Enter course">
+            <form id="transactionForm">
 
-                <button type="submit">Add Student</button>
+                <input
+                    type="text"
+                    id="description"
+                    placeholder="Description"
+                    required
+                >
+
+                <input
+                    type="number"
+                    id="amount"
+                    placeholder="Amount"
+                    required
+                >
+
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+
+                <button type="submit">
+                    Add Transaction
+                </button>
+
             </form>
         </section>
 
         <section class="card">
-            <h2>Student List</h2>
+            <h2>Transactions</h2>
 
-            <ul id="studentList"></ul>
+            <ul id="transactionList"></ul>
         </section>
+
     </main>
 
     <footer>
-        <p>Git Branch Practice Project</p>
+        <p>Money Tracker Project</p>
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>

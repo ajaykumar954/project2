@@ -1,24 +1,30 @@
-const studentForm = document.getElementById("studentForm");
-const studentList = document.getElementById("studentList");
+const transactionForm =
+    document.getElementById("transactionForm");
 
-studentForm.addEventListener("submit", function(event) {
+const transactionList =
+    document.getElementById("transactionList");
+
+transactionForm.addEventListener("submit", function(event) {
+
     event.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const rollNo = document.getElementById("rollNo").value;
-    const course = document.getElementById("course").value;
+    const description =
+        document.getElementById("description").value;
 
-    if (name === "" || rollNo === "" || course === "") {
-        alert("Please fill all fields.");
-        return;
-    }
+    const amount =
+        document.getElementById("amount").value;
 
-    const student = document.createElement("li");
+    const type =
+        document.getElementById("type").value;
 
-    student.textContent =
-        `${name} | ${rollNo} | ${course}`;
+    const transaction =
+        document.createElement("li");
 
-    studentList.appendChild(student);
+    transaction.textContent =
+        `${description} - ₹${amount} (${type})`;
 
-    studentForm.reset();
+    transactionList.appendChild(transaction);
+
+    transactionForm.reset();
+
 });

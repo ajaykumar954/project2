@@ -1,6 +1,6 @@
-# Student Management System
+# Money Tracker
 
-A simple web application created for practicing Git and GitHub branches.
+A simple web application for tracking income and expenses.
 
 ## Technologies
 
@@ -10,20 +10,18 @@ A simple web application created for practicing Git and GitHub branches.
 
 ## Features
 
-- Add student information
-- Display student list
-- Basic form validation
+- Add income
+- Add expenses
+- Display transactions
 
 ## Git Branches
 
-This project is used to practice:
+This project is used to practice Git branching.
+
+Branches:
 
 - main
 - development
 - feature-login
 - feature-search
 - feature-design
-
-## Author
-
-Ajay Kumar

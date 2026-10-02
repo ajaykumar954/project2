@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #222;
     color: white;
     text-align: center;
     padding: 25px;
@@ -44,7 +44,8 @@ form {
     gap: 12px;
 }
 
-input {
+input,
+select {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -54,13 +55,13 @@ button {
     padding: 12px;
     border: none;
     border-radius: 5px;
-    background-color: #333;
+    background-color: #222;
     color: white;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #444;
 }
 
 ul {
@@ -75,5 +76,4 @@ li {
 footer {
     text-align: center;
     padding: 20px;
-    color: #666;
 }
