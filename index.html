@@ -3,12 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Student Management</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Project 2</h1>
-    
-    <b>This is my Project   </b>   
 
+    <header>
+        <h1>Student Management System</h1>
+        <p>Git Branch Practice Project</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Student Information</h2>
+
+            <form id="studentForm">
+                <input type="text" id="name" placeholder="Enter student name">
+                <input type="text" id="rollNo" placeholder="Enter roll number">
+                <input type="text" id="course" placeholder="Enter course">
+
+                <button type="submit">Add Student</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Student List</h2>
+
+            <ul id="studentList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Git Branch Practice Project</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
